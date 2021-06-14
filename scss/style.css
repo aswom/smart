@@ -1,0 +1,179 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  /*===== Colors =====*/
+  --first-color: #FCA4A6;
+  --first-color-dark: #C1576A;
+  --first-color-darken: #A83E51;
+  --white-color: #FCF8F8;
+  /*===== Font and typography =====*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2.5rem;
+  --normal-font-size: .938rem;
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*===== BASE =====*/
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+h1, p, ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*===== LAYOUT =====*/
+.bd-grid {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.l-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 48px 0;
+  background-color: var(--first-color);
+  /*===== NAV =====*/
+}
+
+.l-header .nav {
+  height: var(--header-height);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-header .nav__logo {
+  font-family: 'Proxima Nova - Extrabld';
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #3c3d42;
+}
+
+.l-header .nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 30px;
+}
+
+.l-header .bg__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 30px;
+}
+
+.l-header .bg__info .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 14px;
+}
+
+.l-header .bg__info img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-header .bg__info .phone {
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #3c3d42;
+}
+
+.l-header .bg__info .mail {
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #3c3d42;
+}
+
+/*=== Show menu ===*/
+.show {
+  right: 0;
+}
+
+/*===== HOME =====*/
+.home {
+  background: url(/img/bg_140.svg) center no-repeat;
+  background-color: var(--first-color);
+  overflow: hidden;
+}
+
+.home__container {
+  position: relative;
+}
+
+.home__container .two {
+  position: absolute;
+  top: 67px;
+  left: 461px;
+}
+
+.home__img {
+  position: relative;
+  padding-top: 1.5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 302px;
+  height: 233px;
+}
+
+.home__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 10px 40px;
+  border: 1px solid #000000;
+  font-size: 18px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+header {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cssgrid_triangles.svg");
+  background-size: cover;
+  padding: 30px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.top-nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  color: #fff;
+  justify-content: center;
+}
+.top-nav .logo {
+  margin-top: 10px;
+  font-size: 28px;
+  padding-bottom: 40px;
+}
+.top-nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  grid-gap: 40px;
+}
+.top-nav ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bottom-nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.bottom-text {
+  color: #fff;
+}
+.bottom-text h2 {
+  font-size: 52.2px;
+  padding-top: 80px;
+}
+.bottom-text p {
+  padding: 70px 0;
+}
+.bottom-text .btn {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+.bottom-text .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.showroom {
+  padding: 50px 0;
+}
+
+.show {
+  text-align: center;
+}
+.show ul {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 80px;
+  justify-content: center;
+  list-style: none;
+  padding: 70px 0;
+}
+
+.show-title h2 {
+  font-size: 36px;
+}
+.show-title p {
+  padding: 50px 140px;
+}
+.show-title .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.blog {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.blog-info h2 {
+  font-size: 38px;
+}
+.blog-info p {
+  padding: 50px 100px;
+}
+
+.blog-items {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-gap: 40px;
+  list-style: none;
+  justify-items: center;
+}
+.blog-items h2, .blog-items p {
+  text-align: start;
+  padding: 10px 0;
+}
+
+footer {
+  background-color: #535353;
+  padding: 40px 0;
+  color: #fff;
+}
+footer .foot {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+footer ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 40px;
+  list-style: none;
+}
