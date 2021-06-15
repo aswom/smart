@@ -7,6 +7,8 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="scss/slick.css">
+  <link rel="stylesheet" href="js/slick/slick-theme.css">
   <link rel="stylesheet" href="scss/style.css">
   	<!--<link rel="stylesheet" href="scss/style.css">-->
   
@@ -82,7 +84,7 @@
                
                <div class="item">
                   <img src="/img/heart.png" alt="">
-                  <p>Heading title one</p>
+                  <p class='hide' >Heading title one</p>
                </div>
 
                <div class="item">
@@ -96,33 +98,87 @@
                </div>
 
                <div class="item">
-                  <img src="/img/square.png" alt="">
+                  <img class='sqr' src="/img/square.png" alt="">
                   <p>Heading title one</p>
                </div>
 
                <div class="item">
-                  <img src="/img/umbrella.png" alt="">
-                  <p>Heading title one</p>
-               </div>
-             
-            </div>
-
-            <div class="f__right">
+                  <img class='img3' src="/img/umbrella.png" alt="">
+                  <p class='hide3'>Heading title one</p>
+                  <div class="f__right active">
+                      
                <div class="pic">
                  <img src="/img/big-bag.png" alt="">
                </div>
                <h2>Heading Feature title goes here</h2>
                <p>Nunc accumsan hendrerit nunc, ac venenatis magna facilisis quis. Ut sit amet mi ac neque sodales facilisis. Nullam tempus fermentum lorem nec interdum. Ut id orci id sapien imperdiet vehicula. Etiam quis dignissim ante. Donec convallis tincidunt ligula, ac luctus mi interdum a.</p>
+                  </div>
+               </div>
             </div>
-
          </div>
         </section>
 
+        <section class="product">
+           <div class="p-items bd-grid">
+                  <div class="p-left">
+                     <h2>Onec ultrices ultricies tellus
+                        perfect screens here</h2>
+                     <div class="p-lane"></div>   
+                     <h3>Duis bibendum diam non
+                        erat facilisis tincidunt.</h3>
+                     <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.</p>  
+                     <a href="" class="btn">LEARN MORE</a>
+                  </div>
+                  <div class="p-right">
+                     <img src="/img/mobile1.svg" alt="" class="mobile">
+                     <img src="/img/screen.svg" alt="" class="screen">
+                  </div>
+           </div>
+
+        </section>
+
+        <section class="gallery">
+         <div class="top bd-grid">
+            <h2>Our Latest screenshots gallery</h2>
+            <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.</p>
+         </div>
+         <div class="rev_slider ">
+            <div class="slides bd-grid">
+
+            <div class="slide">
+              <div class="mob" ><img src="/img/mobile.svg" alt=""></div>
+               <div class='text'>
+                  <p> Duis bibendum diam non erat facilaisis 
+                  tincidunt. Fusce leo neque, lacinia at 
+                  tempor vitae, porta at arcu.</p></div>
+            </div>   
+
+              <div class="slide">
+              <div class="mob" ><img src="/img/mobile.svg" alt=""></div>
+               <div class='text'>
+                  <p> Duis bibendum diam non erat facilaisis 
+                  tincidunt. Fusce leo neque, lacinia at 
+                  tempor vitae, porta at arcu.</p></div>
+            </div>   
+
+              <div class="slide">
+              <div class="mob" ><img src="/img/mobile.svg" alt=""></div>
+               <div class='text'> <p> Duis bibendum diam non erat facilaisis 
+                  tincidunt. Fusce leo neque, lacinia at 
+                  tempor vitae, porta at arcu.</p></div>
+            </div>   
+
+
+           </div>
+         </div>
+        </section> 
  <!--wrapper-->
 </section>
     <!--===== GSAP =====-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
+<script src='js/jquery.fancybox.min.js'></script>   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='js/slick.min.js'></script>
  <script src='js/main.js'></script>
 
 </body>
