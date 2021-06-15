@@ -152,18 +152,67 @@ img {
   overflow: hidden;
 }
 
+.home .items {
+  position: relative;
+}
+
+.home__data {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.home__data h2 {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.home__data h3 {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.home__data p {
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #9dc7d1;
+  margin: 50px 0;
+  width: 470px;
+  height: 60px;
+}
+
+.home__data .btn {
+  width: 240px;
+  height: 60px;
+  background-color: rgba(13, 72, 98, 0);
+  border: 3px solid rgba(255, 255, 255, 0.49);
+  border-radius: 30px;
+  padding: 20px 55px;
+}
+
 .home__container {
   position: relative;
+}
+
+.home__container .one {
+  margin-left: 200px;
 }
 
 .home__container .two {
   position: absolute;
   top: 67px;
-  left: 461px;
+  left: 661px;
 }
 
 .home__img {
-  position: relative;
   padding-top: 1.5rem;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -175,5 +224,82 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.future {
+  margin: 100px 0;
+}
+
+.future__top {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.future__top h2 {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #636c6c;
+}
+
+.future__top p {
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #afb8b8;
+  width: 750px;
+  text-align: center;
+}
+
+.future__middle {
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.future__middle .f__left {
+  cursor: pointer;
+}
+
+.future__middle .f__left .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+.future__middle .f__left .item img {
+  margin-right: 40px;
+}
+
+.future__middle .f__left .item p {
+  display: none;
+}
+
+.future__middle .f__right .pic {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.future__middle .f__right .pic img {
+  margin-bottom: 80px;
+}
+
+.future__middle .f__left img:hover {
+  display: block;
+  background-color: #000;
+}
+
+.future__middle .f__left img:hover .item p {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
