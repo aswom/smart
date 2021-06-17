@@ -1,7 +1,13 @@
 
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*,*:before,*,:after{
+   padding:0;
+   margin:0;
+   border:0;
+   box-sizing:border-box;
 
+}
 /*===== VARIABLES CSS =====*/
 :root{
     --header-height: 3rem;
@@ -442,15 +448,91 @@ img{
 
   & .rev_slider{
       // background-color: #999;
+    
       & .slides{
+        // min-width: 0;
+        position:relative;    
+        padding:0 150px;
+          font-size: 0;
+        //& .slick-track{
+          // display: flex;
+        //}
+        //& .slick-list{
+         //  overflow: hidden;
+       // }
 
-         & .slide{
+         & .slick-arrow{
+       
+         position: absolute;
+         top: 50%; // выравнивание по вертикали
+         margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+         z-index: 2; // стрелки сверху картинок
+         font-size: 120rem; // убираем надпись на дефолтной стрелке
+         width: 50px; // ширина стрелки
+         height: 50px; // высота стрелки
+         }
+        & .slick-arrow.slick-prev{
+           
+            left:0;
+            background:url('../img/qcBXXK6pi.png')  0 0 / 100% no-repeat;
+         }
+
+          & .slick-arrow.slick-next{
+            right:0;
+             background: url('../img/riLo94ogT.png') 0 0 / 100% no-repeat;
+         }
+     //&.slick-arrow.slick-prev:before,
+     //&.slick-arrow.slick-next:before {
+      // display: none;
+      // }
+        & .slick-dots{
+         
+    li.slick-active button:before{
+      content: '';// url("/img/qcBXXK6pi.png");
+    }
+    li button:before{
+      content: ''; //url("/img/riLo94ogT.png");
+    }
+   
+          text-align: center;
+         //display: flex; // поставить кнопки в ряд
+        // justify-content: center; // выровнять по центру
+         list-style: none; // убираем черные маркеры
+         }
+         
+         & .slick-dots button {
+           background: #eddfd477; // цвет фона
+            border: none; // без рамки
+            //border-radius: 50%; // радиус закругления
+            height: 15px; // высота точки
+             width: 15px; // ширина точки
+             margin: 5px; // отступы между точками
+             outline: none; // убираем обводку
+             list-style: none; // 
+               }        
+
+
+         & .slick-dots li[class="slick-active"] button {
+            height: 20px; // высота точки
+             width: 20px; // ширина точки
+                 background: #eac8be;
+         }
+
+        & .slide{
           margin-bottom:20px;
-            
+           padding: 0px 15px;
+        
+         
+        
+
+
+                  
             & .mob{
                & img{
                //width: 296px;
+               max-width:100%;
                height: 622px;
+               margin-bottom: 50px;
                }
                     
             }
@@ -468,9 +550,4 @@ img{
          }
       }
    }
-}
-.slick-dots{
-   color:#000;
-   font-size: 50px;
-  
 }
