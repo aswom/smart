@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" width="10" height="10">
+	<title>testimonials</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #5dca88 } 
+	</style>
+	<g id="testimonials">
+		<path id="dot" class="shp0" d="M5 0C7.76 0 10 2.24 10 5C10 7.76 7.76 10 5 10C2.24 10 0 7.76 0 5C0 2.24 2.24 0 5 0Z" />
+	</g>
+</svg>
