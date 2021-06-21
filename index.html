@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
    <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!--<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>-->
 
-  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="scss/slick.css">
-  <link rel="stylesheet" href="js/slick/slick-theme.css">
+  <!--<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>-->
+  <!--<link rel="stylesheet" href="scss/slick.css">-->
+  <!--<link rel="stylesheet" href="js/slick/slick-theme.css">-->
+  <!--<link rel="stylesheet" href="scss/flexslider.css" type="text/css" media="screen" />-->
   <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   	<!--<link rel="stylesheet" href="scss/style.css">-->
   
+
   <title>Responsive landing page coffee 3D</title>
 
 </head>
@@ -105,16 +108,21 @@
                <div class="item">
                   <img class='img3' src="/img/umbrella.png" alt="">
                   <p class='hide3'>Heading title one</p>
-                  <div class="f__right active">
+
+                  </div>
+                  
+               
+            </div>
+
+            <div class="f__right active">
                       
-               <div class="pic">
-                 <img src="/img/big-bag.png" alt="">
-               </div>
+                     <div class="pic">
+                     <img src="/img/big-bag.png" alt="">
+                     </div>
                <h2>Heading Feature title goes here</h2>
                <p>Nunc accumsan hendrerit nunc, ac venenatis magna facilisis quis. Ut sit amet mi ac neque sodales facilisis. Nullam tempus fermentum lorem nec interdum. Ut id orci id sapien imperdiet vehicula. Etiam quis dignissim ante. Donec convallis tincidunt ligula, ac luctus mi interdum a.</p>
                   </div>
-               </div>
-            </div>
+
          </div>
         </section>
 
@@ -142,44 +150,103 @@
             <h2>Our Latest screenshots gallery</h2>
             <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.</p>
          </div>
-         <div class="rev_slider ">
-            <div class="slides bd-grid">
+           </section> 
 
-            <div class="slide">
-              <div class="mob" ><img src="/img/mobile.svg" alt=""></div>
-               <div class='text'>
-                  <p> Duis bibendum diam non erat facilaisis 
-                  tincidunt. Fusce leo neque, lacinia at 
-                  tempor vitae, porta at arcu.</p></div>
-            </div>   
-
-              <div class="slide">
-              <div class="mob" ><img src="/img/mobile.svg" alt=""></div>
-               <div class='text'>
-                  <p> Duis bibendum diam non erat facilaisis 
-                  tincidunt. Fusce leo neque, lacinia at 
-                  tempor vitae, porta at arcu.</p></div>
-            </div>   
-
-              <div class="slide">
-              <div class="mob" ><img src="/img/mobile.svg" alt=""></div>
-               <div class='text'> <p> Duis bibendum diam non erat facilaisis 
-                  tincidunt. Fusce leo neque, lacinia at 
-                  tempor vitae, porta at arcu.</p></div>
-            </div>   
-
-
-           </div>
+         <!--<div class="rev_slider ">-->
+       		<!-- Контент -->
+<div class="image-slider swiper-container bd-grid">
+  <!-- Additional required wrapper -->
+  <div class="image-slider_wrapper swiper-wrapper">
+    <!-- Slides -->
+    <div class="image-slider_slide swiper-slide">
+         <div class="image-slider_image">
+                <div class="item">
+                   <img src="/img/mobile.svg" alt="" class="mobile_slide">
+                   <img src="/img/screen_slide.svg" alt="" class="screen_slide">
+                   <p class="text">
+                      Duis bibendum diam non erat facilaisis 
+                        tincidunt. Fusce leo neque, lacinia at 
+                        tempor vitae, porta at arcu.
+                   </p>
+               </div>    
          </div>
-        </section> 
- <!--wrapper-->
-</section>
+      </div>   
+
+    <div class="image-slider_slide swiper-slide">
+         <div class="image-slider_image">
+                <img src="/img/mobile.svg" alt="" class="mobile_slide">
+                   <img src="/img/screen_slide.svg" alt="" class="screen_slide">
+                   <p class="text">
+                      Duis bibendum diam non erat facilaisis 
+                        tincidunt. Fusce leo neque, lacinia at 
+                        tempor vitae, porta at arcu.
+                   </p>
+         </div>
+     </div>
+
+    <div class="image-slider_slide swiper-slide">
+         <div class="image-slider_image">
+             <img src="/img/mobile.svg" alt="" class="mobile_slide">
+                   <img src="/img/screen_slide.svg" alt="" class="screen_slide">
+                   <p class="text">
+                      Duis bibendum diam non erat facilaisis 
+                        tincidunt. Fusce leo neque, lacinia at 
+                        tempor vitae, porta at arcu.
+                   </p>
+         </div>
+     </div>
+   
+      <div class="image-slider_slide swiper-slide">
+         <div class="image-slider_image">
+              <img src="/img/mobile.svg" alt="" class="mobile_slide">
+                   <img src="/img/screen_slide.svg" alt="" class="screen_slide">
+                   <p class="text">
+                      Duis bibendum diam non erat facilaisis 
+                        tincidunt. Fusce leo neque, lacinia at 
+                        tempor vitae, porta at arcu.
+                   </p>
+         </div>
+     </div>
+
+      <div class="image-slider_slide swiper-slide">
+         <div class="image-slider_image">
+              <img src="/img/mobile.svg" alt="" class="mobile_slide">
+                   <img src="/img/screen_slide.svg" alt="" class="screen_slide">
+                   <p class="text">
+                      Duis bibendum diam non erat facilaisis 
+                        tincidunt. Fusce leo neque, lacinia at 
+                        tempor vitae, porta at arcu.
+                   </p>
+         </div>
+     </div>
+   
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+         <!--</div>-->
+        
+ 
     <!--===== GSAP =====-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src='js/jquery.fancybox.min.js'></script>   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src='js/slick.min.js'></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>-->
+<!--<script src='js/jquery.fancybox.min.js'></script>   -->
+<!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+<!--<script src='js/slick.min.js'></script>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!-- Подключаем jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!--<script src='js/slick.min.js'></script>-->
  <script src='js/main.js'></script>
+<!--wrapper-->
+</section>
 
 </body>
 </html>
