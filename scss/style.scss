@@ -260,6 +260,7 @@ html,body{
             text-align: center;
            
          }
+         
       }
       &__middle{
          margin-top:100px;
@@ -278,8 +279,28 @@ html,body{
                }
                & p{
                   display: block;
-                  margin-right:40px;
+                  margin-right:140px;
+                  font-family: Raleway;
+                  font-size: 20px;
+                  line-height: 1.2;
+                  font-weight: 400;
+                  color: #9fa9a9;
                }
+                & p::after{
+               content:"||";
+               padding-left: 50px;
+               color:#000;
+               font-weight: bold;
+               font-size:500%;
+               height:30px;
+                 }
+                   & p:hover::after{
+               content:"||";
+               padding-left: 50px;
+               color:green;
+               font-weight: bold;
+               font-size:500%              
+                 }
                 & p:before{
                    content: url("/img/heart.png");
                    
@@ -290,24 +311,25 @@ html,body{
                 & p:hover::before{
                     content: url("/img/new-bag.png");
                 }
-               //   & img:hover+p{
-               //      display: none;
-               //  }
-                & .sqr{
-                   margin-right:68px;
-                }
-                   & .f__right{
-                      position: absolute;
-                      top:0;
-                      left:500px;
-                  display: none;       
-                   } 
-                & .hide3:hover+.f__right{
-                    display: block;
-                    }
-                 & .active{
-                      display: block;
-                 }   
+                  & img:hover+p{
+                     display: none;
+                 }
+               
+               // & .sqr{
+               //    margin-right:68px;
+               // }
+                  // & .f__right{
+                  //    position: absolute;
+                  //    top:0;
+                  //    left:500px;
+                  //display: none;       
+                  // } 
+               // & .hide3:hover+.f__right{
+               //     display: block;
+               //     }
+               //  & .active{
+               //       display: block;
+               //  }   
          }
 
 
@@ -567,7 +589,7 @@ color: #afb8b8;
                color: #8c9494;
                margin-bottom:50px;
             }
-
+           
             & .btn{
                width: 260px;
                //height: 60px;

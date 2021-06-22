@@ -280,7 +280,29 @@ html, body {
 
 .future__middle .f__left .item p {
   display: block;
-  margin-right: 40px;
+  margin-right: 140px;
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #9fa9a9;
+}
+
+.future__middle .f__left .item p::after {
+  content: "||";
+  padding-left: 50px;
+  color: #000;
+  font-weight: bold;
+  font-size: 500%;
+  height: 30px;
+}
+
+.future__middle .f__left .item p:hover::after {
+  content: "||";
+  padding-left: 50px;
+  color: green;
+  font-weight: bold;
+  font-size: 500%;
 }
 
 .future__middle .f__left .item p:before {
@@ -296,23 +318,8 @@ html, body {
   content: url("/img/new-bag.png");
 }
 
-.future__middle .f__left .item .sqr {
-  margin-right: 68px;
-}
-
-.future__middle .f__left .item .f__right {
-  position: absolute;
-  top: 0;
-  left: 500px;
+.future__middle .f__left .item img:hover + p {
   display: none;
-}
-
-.future__middle .f__left .item .hide3:hover + .f__right {
-  display: block;
-}
-
-.future__middle .f__left .item .active {
-  display: block;
 }
 
 .future__middle .f__right .pic {
